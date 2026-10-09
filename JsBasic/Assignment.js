@@ -83,7 +83,7 @@ console.log("Username:" , userName);
 console.log("User Email:" , userEmail);
 console.log(typeof userName);
 console.log(typeof userEmail);
-console.log('---------------------------------');
+console.log('-----------------End----------------');
 
 //1. What is the difference between undefined and null?
 // Ans=> a variable has been declared but not assigned a value is undefined. null is an assignment value. It can be assigned to a variable as a representation of no value.
@@ -94,3 +94,30 @@ console.log('---------------------------------');
 //4. Why is typeof null considered unusual in JavaScript?
 //answer=> Because null is a primitive value that represents the intentional absence of any object value. However, when you use the typeof operator on null, it returns "object". 
 // This is a historical bug in JavaScript that has been present since its early days and has
+
+
+console.log(`------6.Operators Assignment-----------------`);
+//Guess the output?
+console.log(1 + "2" + 3); //123
+console.log(1 + 2 + "3"); //33
+console.log("5" * true);  //5
+console.log(10 > 5 > 1);  // false
+let a1 = 2;
+let b = a1++ + ++a1; //(2+4=6 )
+console.log(a1, b); // (a1=4,b=6)
+
+
+let a2 = 3;
+console.log(a2++ + a2++ + ++a2); //( 3 + 4 + 6 = 13)
+
+
+console.log(5 * 2 == "10"); // true
+
+let x = 1;
+let y = ++x + x++ + x; //y=2+2+3=7, x=3 
+console.log(x, y); //(x=3;y=7)
+
+console.log(10 > 5 && 20 < 30); //true
+
+console.log(null || undefined || "Playwright");//playwright
+   
