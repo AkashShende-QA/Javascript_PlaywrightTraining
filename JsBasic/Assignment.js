@@ -121,3 +121,10 @@ console.log(10 > 5 && 20 < 30); //true
 
 console.log(null || undefined || "Playwright");//playwright
    
+
+//==========================================================
+// JavaScript Practice: Type Coercion & Explicit Conversion
+//===========================================================
+
+
+
