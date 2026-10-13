@@ -83,7 +83,6 @@ console.log("Username:" , userName);
 console.log("User Email:" , userEmail);
 console.log(typeof userName);
 console.log(typeof userEmail);
-console.log('-----------------End----------------');
 
 //1. What is the difference between undefined and null?
 // Ans=> a variable has been declared but not assigned a value is undefined. null is an assignment value. It can be assigned to a variable as a representation of no value.
@@ -96,7 +95,7 @@ console.log('-----------------End----------------');
 // This is a historical bug in JavaScript that has been present since its early days and has
 
 
-console.log(`------6.Operators Assignment-----------------`);
+console.log(`----------------6.Operators Assignment-----------------`);
 //Guess the output?
 console.log(1 + "2" + 3); //123
 console.log(1 + 2 + "3"); //33
@@ -123,8 +122,98 @@ console.log(null || undefined || "Playwright");//playwright
    
 
 //==========================================================
-// JavaScript Practice: Type Coercion & Explicit Conversion
+console.log(`------" Start the programming: Type Coercion & Explicit Conversion-----------------`); 
 //===========================================================
 
+
+//1.Problem 1 — UI Price and Quantity :
+let price = "500";
+let quantity = "3";
+
+let total =Number(price)*Number(quantity);
+console.log("Total UI Price and Quantity:"+total);
+console.log (typeof total);//number
+
+//2.Problem 2 — UI Price + Tax and The UI returns:
+let price1 = "1000";
+let tax = "200";
+let Finalprice= Number(price1)+Number(tax);
+console.log("The UI return is :"+Finalprice); //1200
+console.log(typeof Finalprice);//number
+
+//3.Problem 3-Understand + Coercion 
+let actual = "100";
+let expected = 20;
+console.log(actual + expected); //10020=("100"+20)
+
+//4.Understand - Coercion
+let actual2 = "100";
+let expected2 = 20;
+console.log(actual2-expected2);// 80=(100-20) 
+
+//5.UI Value and Assertion
+
+let actual_Price= "100";
+let expected_Price = 100;
+console.log(actual_Price == expected_Price);//true 
+console.log(actual_Price === expected_Price);//false 
+
+
+//6.Fix the Assertion
+
+let actualPrice1= "500";
+let expectedPrice1 = 500;
+console.log(Number(actualPrice1) === expectedPrice1);//true
+
+//7.Environment Variable
+
+let timeout1= "30000";
+let timeout = Number(timeout1);
+console.log(timeout); //30000
+console.log(typeof timeout); //number
+
+
+//8.Problem 8 — Order ID
+let orderId = 12345;
+let orderIDoutput ="ORDER-" + String(orderId);
+console.log(orderIDoutput);
+
+//Problem 9 — Boolean API Value :-
+let status2 = "true";
+let ActualBoolean= status2 === "true" ;
+console.log(ActualBoolean);
+console.log(typeof ActualBoolean);
+
+//or we can use the below code to check the below boolean api value is  true or not:
+
+let status1= "true";
+let ActualBoolean1= status1 === "true" ;
+if(ActualBoolean1===true){
+
+    console.log("the status is true:"+ActualBoolean1);
+
+}else{
+console.log("the status is Not true:"+ActualBoolean1);
+    
+}
+console.log(`the status of the boolean Api value is :`+ActualBoolean1);
+console.log(typeof ActualBoolean1);
+
+
+
+//10 .Problem 10 — Input Field Value
+let quantity1 = "5";
+let expectedQuantity = 5;
+console.log(Number(quantity1)===expectedQuantity);
+
+//11.Problem 11 — Calculate Cart Total
+let price4 = "799";
+let quantity4 = "2";
+let discount = "100";
+
+let total1 =Number(price4)*Number(quantity4) -Number(discount);
+console.log(total1); // 1498
+console.log(typeof total1);//number
+console.log('-----------------End----------------');
 
 

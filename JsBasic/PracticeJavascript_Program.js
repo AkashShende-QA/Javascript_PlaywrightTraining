@@ -18,7 +18,6 @@ console.log(city);
 console.log(message);
 console.log(`My name is ${fname2} and  i live in ${city} and ${message}`);
 
-
 let age =32;
 console.log(age);
 console.log(typeof age);
@@ -36,27 +35,5 @@ console.log(typeof (a+b));
 let a1;
 console.log(a1);
 console.log(typeof a1);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 console.log("------------------End----------------");
