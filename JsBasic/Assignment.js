@@ -231,8 +231,6 @@ console.log("Even Number:"+Number);
 console.log  ("Odd Number:"+Number);
 }
 
-
-
 // Assignment No 2. Print the day of the week based on number (1–7). What you will use here? If-else or switch case? =>
 // Switch-case :- 
  let Num1 =3;

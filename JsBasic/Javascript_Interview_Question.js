@@ -15,7 +15,6 @@ let temp=res;
 
 for(let i=4;i>=0;i--){
 res+=S1.charAt(i);
-
 }
 //console.log("Reverse String :"+res);
 console.log(`Reverse a string of${temp} is:${res}`);
@@ -39,9 +38,10 @@ number=Math.floor(number/10);
 result1=result*10+rem1;
 }
 if(number===result1){
+
     console.log("Palindrome Number"+result1);
 
 }else{
 
-  console.log("Not a Palindrome Number"+result1);
+  console.log("Not a Palindrome Number:"+result1);
 }

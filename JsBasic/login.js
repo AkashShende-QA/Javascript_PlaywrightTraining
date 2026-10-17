@@ -13,6 +13,21 @@ else {
  console.log("Invalid_credential...!");
 }
 
+console.log("---------------------------------")
+// Login Sucessfull:-
+let enteredUsername1="Akash";
+let enteredPassword1="akash@123";
+const correctusername1="Akash";
+const correctPassword1="akash@123";
+
+if(enteredUsername1 === correctusername1 && enteredPassword1 === correctPassword1)
+    {
+    console.log("Login sucessfull....!");
+}
+else {
+    console.log("Invalid_credential.........!");
+}
+
 
 
 

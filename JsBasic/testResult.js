@@ -8,22 +8,22 @@
 let responsecode=305;
 
 if(responsecode>=100 && responsecode<=199){
-console.log(`Status should be Informational & Status code is:-`+responsecode);
+console.log(`Status should be Informational & Status code is:`+responsecode);
 
 }else if(responsecode>=200 && responsecode<=299){
-console.log(`Status should be successful...! & Status code is:-`+responsecode);
+console.log(`Status should be successful...! & Status code is:`+responsecode);
 
 }else if(responsecode>=300 && responsecode<=399){
-console.log(`Status should be Redirectional ! & Status code is:-`+responsecode);
+console.log(`Status should be Redirectional ! & Status code is:`+responsecode);
 
 }else if(responsecode>=400 && responsecode<=499){
 
-console.log(`Status should be Client Error ! & Status code is:-`+responsecode);
+console.log(`Status should be Client Error ! & Status code is:`+responsecode);
 }
 else if(responsecode>=500 && responsecode<=599){
-console.log(`Server Error For any other code & Status code is:- `+responsecode);
+console.log(`Server Error For any other code & Status code is: `+responsecode);
 
 }else{
-console.log(`Status Unkown Status code Error ! & Status code is:- `+responsecode);
+console.log(`Status Unkown Status code Error ! & Status code is: `+responsecode);
 
 }

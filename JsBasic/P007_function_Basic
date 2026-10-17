@@ -37,12 +37,9 @@ console.log(typeof test2);//function
 
 //call
 test2();
-
-
 console.log("----Arrow function------");
-
 let test3=()=>{console.log("This is arrow function is calling....")}
-    
+
 console.log(typeof test3);//function
 
 //call
