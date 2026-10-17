@@ -127,10 +127,12 @@ console.log(`------" Start the programming: Type Coercion & Explicit Conversion-
 
 
 //1.Problem 1 — UI Price and Quantity :
+
 let price = "500";
 let quantity = "3";
 
-let total =Number(price)*Number(quantity);
+let total =Number(price) * Number(quantity);
+
 console.log("Total UI Price and Quantity:"+total);
 console.log (typeof total);//number
 
@@ -217,3 +219,48 @@ console.log(typeof total1);//number
 console.log('-----------------End----------------');
 
 
+
+
+console.log(`----------------------COnditional statement program----------------`)
+//Assignment No 1: Write a JavaScript program to check whether a number is even or odd.
+let Number=33;
+if (Number%2==0){
+console.log("Even Number:"+Number);
+
+}else{
+console.log  ("Odd Number:"+Number);
+}
+
+
+
+// Assignment No 2. Print the day of the week based on number (1–7). What you will use here? If-else or switch case? =>
+// Switch-case :- 
+ let Num1 =3;
+switch (Num1){
+case 1: 
+    console.log("Monday");
+     break; 
+case 2: 
+    console.log("Tuesday");
+     break; 
+case 3: 
+    console.log("Wednesday");
+     break; 
+case 4: 
+    console.log("Thrusday");
+     break; 
+case 5: 
+    console.log("Friday");
+     break; 
+
+case 6: 
+    console.log("Saturday");
+     break; 
+
+case 7: 
+    console.log("Sunday");
+     break;
+default : 
+console.log("Invalid day number--Error !!");
+
+}
