@@ -8,7 +8,7 @@
  }
  console.log("Reverse String :"+rev);
 
-// 2. Reverse  a String :
+// 2. Reverse  a String  is using variable :
 let S1="Hello";
 let res="";
 let temp=res;
@@ -29,7 +29,7 @@ result=result*10+rem;
 }
 console.log(result);
 
- //4. Check palindrome or notby using Javascript:
+ //4. Check palindrome number or not by using Javascript:
 
 let number=121,rem1=0,result1=0;
 while(number>0){
@@ -45,3 +45,32 @@ if(number===result1){
 
   console.log("Not a Palindrome Number:"+result1);
 }
+
+// 5. To check the string is palindrome or not :
+
+let str1 ="level";
+let rev1="";
+
+for (let i=str1.length-1;i>=0;i--){
+rev1=rev1+str1.charAt(i);
+
+}
+if(str1===rev1){
+console.log("Palindrome string :"+rev1);
+}else{
+console.log("Not Palindrome string :"+rev1);
+}
+
+// 6.Reverse a string without using reverse()
+function reverseString(str){
+
+let result="";
+
+for(let i= str.length-1;i>=0;i--){
+ result=result + str[i];
+
+}
+
+return result;
+}
+console.log(reverseString("Playwright"));

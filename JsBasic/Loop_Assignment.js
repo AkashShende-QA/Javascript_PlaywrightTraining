@@ -9,8 +9,6 @@ for (let i=2;i<number ;i++){
     }
 }
 console.log(prime ? "Prime Number":"Not Prime Number ");
-
-
 console.log("----End----");
 //2.Print Even Numbers => Problem Statement: Write a JavaScript program to print all even numbers between 1 and 50 using a loop.
 console.log("----Start =>Print Even Numbers----");
@@ -53,4 +51,25 @@ while(num >0){
 }
 console.log(`print count the total number of digits:`+count);
 
-// 6.
+// 6.Print numbers from 1 to 20, but terminate the loop when the number reaches 10.
+
+for(let i=1;i<20;i++){
+
+if(i===10){
+    break; //break terminates the entire loop immediately
+    }
+console.log("print numbers from 1 to 20 but terminate the loop : "+i);
+
+}
+
+//7.Print numbers from 1 to 20, but skip all even numbers using continue
+for(let i=1;i<20;i++){
+
+if(i%2===0)         //i % 2 === 0 to checks whether the number is even.
+{
+continue;
+
+}
+
+console.log("print numbers from 1 to 20 but skip all the Even Number:"+i)
+}
