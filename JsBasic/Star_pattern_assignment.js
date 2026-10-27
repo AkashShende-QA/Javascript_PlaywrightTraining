@@ -8,7 +8,7 @@
 *****
 
 */
-
+console.log(`===========>Pattern_Example===============>`)
 for(let r=1;r<=5;r++)
 {
 let row="";
@@ -29,6 +29,7 @@ console.log(row);
 **
 *
 */
+console.log( `================Start the program===================>`)
 for(let r=5;r>=1;r--){
 let row="";
 for(let a=1;a<=r ;a++){

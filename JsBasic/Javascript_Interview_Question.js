@@ -4,7 +4,7 @@
  let rev="";
 
  for (let i=str.length-1;i>=0;i--){
-    rev+=str.charAt(i); // logic using chatAT Method 
+    rev+=str.charAt(i); // logic using chatAT Method // reversed = reversed + str[i]; 
  }
  console.log("Reverse String :"+rev);
 
@@ -47,7 +47,6 @@ if(number===result1){
 }
 
 // 5. To check the string is palindrome or not :
-
 let str1 ="level";
 let rev1="";
 
@@ -61,11 +60,10 @@ console.log("Palindrome string :"+rev1);
 console.log("Not Palindrome string :"+rev1);
 }
 
-// 6.Reverse a string without using reverse()
+// 6.Reverse a string without using reverse() :
 function reverseString(str){
 
 let result="";
-
 for(let i= str.length-1;i>=0;i--){
  result=result + str[i];
 
@@ -74,3 +72,16 @@ for(let i= str.length-1;i>=0;i--){
 return result;
 }
 console.log(reverseString("Playwright"));
+
+// largest no in an array
+let numbers=[1,2,3,4,55,66];
+let largest=numbers[0];
+
+for(let i=1;i< numbers.length;i++){
+  if(numbers[i]>largest){
+  largest=numbers[i];
+
+  }
+  
+}
+console.log(largest);
