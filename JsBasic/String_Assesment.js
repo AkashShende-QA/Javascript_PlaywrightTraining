@@ -47,7 +47,6 @@ if("aeiouAEIOU".includes(ch)){
 }
 console.log("Count the number of vowels in a string:",vowels);
 
-
 //Reverse a string with & without using the built-in reverse() method.
 let string2= "playwright";
 let output1=string2.split("").reverse().join("");

@@ -12,7 +12,6 @@
 let S1="Hello";
 let res="";
 let temp=res;
-
 for(let i=4;i>=0;i--){
 res+=S1.charAt(i);
 }
@@ -52,13 +51,13 @@ let rev1="";
 
 for (let i=str1.length-1;i>=0;i--){
 rev1=rev1+str1.charAt(i);
-
 }
 if(str1===rev1){
 console.log("Palindrome string :"+rev1);
 }else{
 console.log("Not Palindrome string :"+rev1);
 }
+
 
 // 6.Reverse a string without using reverse() :
 function reverseString(str){
@@ -68,21 +67,18 @@ for(let i= str.length-1;i>=0;i--){
  result=result + str[i];
 
 }
-
 return result;
 }
 console.log(reverseString("Playwright"));
 
-// largest no in an array
+// largest no in an array :
+
 let numbers=[1,2,3,4,55,66];
 let largest=numbers[0];
-
 for(let i=1;i< numbers.length;i++){
   if(numbers[i]>largest){
   largest=numbers[i];
-
   }
-  
 }
 console.log(largest);
 
@@ -167,6 +163,35 @@ console.log(data);
 let carRes= data.replaceAll(/[0-9]/g,"");
 console.log(carRes);
 
-//
+// count vowels in string:
 
+let string1="I am learning JavaScript"
+let count=0;
+for(let i=0;i<string1.length;i++){
+
+  if("aeiou".includes(string1.charAt(i).toLowerCase())){
+
+count++;
+
+  }
+}
+console.log("Vowels:"+count);
+
+
+// Prime number or not :
+// a number which is divisible By 1 & itself is called prime number.
+
+let number1=7;
+let flag=true;
+for(let i=2;i<number1;i++)
+  {
+  if(number1 % i === 0){
+     flag=false;
+  }
+}
+if(flag===true){
+ console.log("Prime Number:"+number1);
+}else{
+  console.log("Not a prime Number:"+number1);
+}
 

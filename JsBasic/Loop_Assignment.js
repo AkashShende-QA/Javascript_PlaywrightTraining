@@ -9,6 +9,7 @@ for (let i=2;i<number ;i++){
     }
 }
 console.log(prime ? "Prime Number":"Not Prime Number ");
+
 console.log("----End----");
 //2.Print Even Numbers => Problem Statement: Write a JavaScript program to print all even numbers between 1 and 50 using a loop.
 console.log("----Start =>Print Even Numbers----");

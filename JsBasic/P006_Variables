@@ -21,7 +21,11 @@ let
 -------------
 -Scope: Global +Block scope
 -For mutable data use let
--let is hoisted bute let initialize in temporal dead zone so if you try to call 
+-let is hoisted but let initialize in
+
+
+
+temporal dead zone so if you try to call 
 it before initialization then you will get reference error
 -Redeclaration is not allowed
 -Reassignment is allowed
@@ -47,12 +51,10 @@ let fname="Jay";
 
 
 //redeclaration  & reassignment allowed for var type
-
 //redeclaration means declaring same name variable again
 var id=101;
 var id=201;
 var id=301;
-
 console.log(id);//301
 console.log(typeof id);//number
 
@@ -66,10 +68,12 @@ console.log(typeof id);
 
 //let: Redeclaration is not allowed 
 //let id=1010;
+
 //console.log(id);//SyntaxError: Identifier 'id' has already been declared
 
 //Cannot redeclare block-scoped variable 'toolName'.
 //let toolName="Selenium";
+
 let toolName="Playwright";
 console.log(toolName);
 
@@ -78,8 +82,10 @@ toolName="Postman";
 console.log(toolName);
 
 console.log("------------");
+
 //const: redeclaration and reassignment not allowed
 //Cannot redeclare block-scoped variable 'vendorName'.
+
 const vendorName="Microsoft";
 //const vendorName="Microsoft";
 //reassignment
@@ -97,7 +103,8 @@ block: ifblock, while/for loop
     
 }
 */
-
+//global data inside function:yes
+//function: we used to define to perform certain operation
 var fname="Hiteshi";
 let location="Us";
 const emailId="hiteshi@gmail.com";
@@ -106,13 +113,10 @@ console.log(fname);
 console.log(location);
 console.log(emailId);
 
-//global data inside function:yes
-
-//function: we used to define to perform certain operation
-
 function getData()
 {
-    console.log("---Global data calling from function----");
+    
+ console.log("---Global data calling from function----");
     
  console.log(fname);
 console.log(location);
@@ -183,12 +187,15 @@ console.log("-----------------------");
 //var type Global +function
 var a=10;
 console.log(a);//10
-function test1()
-{ var a=20;
+
+function test1(){ 
+    
+    var a=20;
     console.log(a);//20
+
     if(true)
     {
-        var a=30;
+        var a=30; 
         console.log(a);//30
         
     }
@@ -197,14 +204,17 @@ function test1()
 test1();
 
 console.log("--------------");
-//let: global +block
+
+//let: global + block
 let b=10;
 console.log(b);//10
+
 function test2()
 { 
     var a=100;
     let b=20;
     console.log(b);//20
+
     if(true)
     {
         let b=30;
@@ -215,13 +225,13 @@ function test2()
     console.log(b);//20
 }
 
-
 test2();
 
 console.log(a);//10
 //console.log(x);//ReferenceError: x is not defined
 
 console.log("--------------");
+
 //const: global +block
 const c=10;
 console.log(c);//10

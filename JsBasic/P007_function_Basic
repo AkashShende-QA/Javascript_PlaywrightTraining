@@ -3,8 +3,8 @@ Function
 ------------------
 defines group of statment which performs some functionality
 
-Javascript support 2 types of function 
------------------------------------
+Javascript support 2 types of function  :-
+---------------------------------------
 1.Function declaration
 2.Function Expression
     2.1. Anonymous function(function without name)
@@ -37,10 +37,17 @@ console.log(typeof test2);//function
 
 //call
 test2();
+
+// Arrow functioon:
+
 console.log("----Arrow function------");
-let test3=()=>{console.log("This is arrow function is calling....")}
+
+let test3=()=>{
+    
+    console.log("This is arrow function is calling....")
+}
 
 console.log(typeof test3);//function
 
 //call
-test3();
+test3();``
